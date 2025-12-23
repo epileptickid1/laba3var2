@@ -1,59 +1,61 @@
 calc start.
-from seta did action from setd did action 1.
-from seta did action 2.
-from seta did action 31.
-from seta did action 4.
-from seta did action .
-.
-dfrom seta did action  did action 6.
-from seta did action 7.
-from seta did action 2.
-8from setd did action .
-from set3b did action .
-from setd did action from sete4 did action 11.
-from set.
-
-from setdfrom set did action f22 did action .
-from sete
- did action from setb did action 53.
-3from sete.
-id action from setfrom setib did action  did action 4.
-from sete did action from set 45.
-.
-1ifrom set did action .
-b did action .
-.
-5
-from set did action i did action .
-32.
-from seti did action 1.
+from setd did action from setb did action from seta did action 1.
+from setd did action 2.
+from setd did action 3.
+from setd did action 1.
 4.
-from setfrom set.
- did action f did action from seti did action 25.
+bfrom set did action d did action 5.
+2.
+2.
+i did action from setb did action 11.
+from seti did action 32.
 .
+omifrom set did action b did action from set3a4 did action .
+.
+from seti did action b did action 45.
+from seti.
+5.
+2.
+from seta did action 3.
+from setfrom seta did action c did action 4.
+from seta1 did action .
 from setc did action .
-from setf did action 3.
-from setc did action 4.
-from setf did action 4.
-from setc did action 5.
-from setf5 did action .
-6.
-from setf did action 7.
-from sethfrom setjdid action  did action 1.
-from seth1 did action .
-from setj did action 2.
+from seta did action 2.
+from setc did action 6.
+from seta did action 3.
+from setc did action 7.
+from seta did action .
+from setc did action 8.
+5.
+from seth did action e did action 1.
+1from seth did action .
+from sete did action 2.
 from seth did action 2.
-from setj3 did action .
-from setj3 did ah did action 3g did action .
-from setj did action 4.
+from setfrom sete did action .
+from seth did action g did action 3.
+4from sete did action .
 4.
+from sete did action 5.
+11.
+11.
+.
+from setfrom setfg did action ion 3.
+tion 22.
+.
+ffrom set did action g did action 33.
+.
+om sett f did action from setg did action 44.
+.
+om setio did action 5.
+from setf did action 6.
+from setf did action 7.
 from setj did action 1.
-5from setg did action .
 from setj did action 2.
-from setg6 did action .
 from setj did action 3.
-from setg did action 7.
 from setj did action 4.
-8.
+from setj did action 5.
+from setj did action 6.
+from setj did action 7.
+from setj did action 8.
 from setj did action 9.
 cacl end.

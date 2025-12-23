@@ -6,7 +6,7 @@
 #include <functional>
 #include <windows.h>
 
-using namespace std;
+
 
 
 const int A_COUNT = 8;
@@ -23,13 +23,13 @@ const int J_COUNT = 9;
 const int NT = 5;
 
 
-void f(char task_name, int action_num, osyncstream& out) {
+void f(char task_name, int action_num, std::osyncstream& out) {
     out << "from set " << task_name
         << " did action " << action_num << ".\n";
     out.emit();
 }
 
-void run_task(char name, int count, osyncstream& out) {
+void run_task(char name, int count, std::osyncstream& out) {
     for (int i = 1; i <= count; ++i)
         f(name, i, out);
 }
@@ -37,57 +37,57 @@ void run_task(char name, int count, osyncstream& out) {
 int main() {
     
     SetConsoleOutputCP(CP_UTF8);
-    osyncstream out(cout);
+    std::osyncstream out(std::cout);
     out << "calc start.\n";
     out.emit();
 
     
-    latch latch_a(1);     
-    latch latch_bc(2);     
-    latch latch_d(1);      
-    latch latch_final(6);
+    std::latch latch_a(1);
+    std::latch latch_cb(2);
+    std::latch latch_d(1);
+    std::latch latch_final(6);
 
-    auto t1 = [&](stop_token) {
+    auto t1 = [&](std::stop_token) {
         run_task('a', A_COUNT, out);
         latch_a.count_down();
 
-        latch_a.wait();
+        //latch_a.wait();
         run_task('e', E_COUNT, out);
         latch_final.count_down();
         };
 
    
-    auto t2 = [&](stop_token) {
+    auto t2 = [&](std:: stop_token) {
         run_task('b', B_COUNT, out);
-        latch_bc.count_down();
+        latch_cb.count_down();
 
-        latch_bc.wait();
+        latch_cb.wait();
         run_task('g', G_COUNT, out);
         latch_final.count_down();
         };
 
    
-    auto t3 = [&](stop_token) {
+    auto t3 = [&](std:: stop_token) {
         run_task('c', C_COUNT, out);
-        latch_bc.count_down();
+        latch_cb.count_down();
 
-        latch_bc.wait();
+        latch_cb.wait();
         run_task('h', H_COUNT, out);
         latch_final.count_down();
         };
 
  
-    auto t4 = [&](stop_token) {
+    auto t4 = [&](std::stop_token) {
         run_task('d', D_COUNT, out);
         latch_d.count_down();
 
-        latch_d.wait();
+        //latch_d.wait();
         run_task('i', I_COUNT, out);
         latch_final.count_down();
         };
 
    
-    auto t5 = [&](stop_token) {
+    auto t5 = [&](std::stop_token) {
         latch_a.wait();
         run_task('f', F_COUNT, out);
         latch_final.count_down();
@@ -97,7 +97,7 @@ int main() {
         latch_final.count_down();
         };
 
-    vector<jthread> threads;
+    std::vector<std::jthread> threads;
     threads.reserve(NT);
 
     threads.emplace_back(t1);
